@@ -1,5 +1,3 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<LinkTo @params={{array "foo" 1 2}}>Positional Params</LinkTo>
 
-{{outlet}}
+<LinkTo @targetRouteName="foo" @models={{array 1 2}}>Named Params</LinkTo>
