@@ -5,6 +5,8 @@ import { computed }from '@ember/object';
 const HAS_BLOCK = 'HAS_BLOCK';
 
 export default LinkComponent.extend({
+  HAS_BLOCK: true,
+
   qualifiedRouteName: computed(
     'targetRouteName',
     '_routing.currentState',
